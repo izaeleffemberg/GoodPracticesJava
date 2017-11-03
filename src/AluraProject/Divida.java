@@ -1,4 +1,4 @@
-package OOReview;
+package AluraProject;
 
 public class Divida {
 
