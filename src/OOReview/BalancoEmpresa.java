@@ -1,4 +1,4 @@
-import OOReview.Divida;
+package OOReview;
 
 import java.util.HashMap;
 
@@ -12,6 +12,13 @@ public class BalancoEmpresa {
         divida.setTotal(valor);
         divida.setCnpjDoCredor(cnpjDoCredor);
         dividas.put(cnpjDoCredor, divida);
+    }
+
+    public void pagaDivida(String cnpjDoCredor, double valor){
+        Divida divida = dividas.get(cnpjDoCredor);
+        if (divida != null) {
+            divida.pagar(valor);
+        }
     }
 
 }
