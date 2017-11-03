@@ -36,6 +36,9 @@ public class Divida {
     }
 
     public void pagar (double valor){
+        if (valor < 0){
+            throw new ValorInvalidoException();
+        }
         // taxa bancaria
         valor = (valor > 100) ? valor - 8 : valor;
         this.valorPago += valor;
