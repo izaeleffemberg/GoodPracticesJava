@@ -15,7 +15,10 @@ public class Divida {
         if (valor < 0){
             throw new ValorInvalidoException();
         }
-        // taxa bancaria
+        addTaxaBancaria(valor);
+    }
+
+    private void addTaxaBancaria(double valor){
         valor = (valor > 100) ? valor - 8 : valor;
         this.valorPago += valor;
     }
@@ -102,4 +105,9 @@ public class Divida {
     public void setCnpjDoCredor(String cnpjDoCredor) {
         this.cnpjDoCredor = cnpjDoCredor;
     }
+
+    public ArrayList<Pagamento> getPagamentos() {
+        return pagamentos;
+    }
+
 }
