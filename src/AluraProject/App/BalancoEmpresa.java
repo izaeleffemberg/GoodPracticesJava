@@ -1,4 +1,4 @@
-package AluraProject;
+package AluraProject.App;
 
 import java.util.HashMap;
 

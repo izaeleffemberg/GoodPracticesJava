@@ -1,4 +1,4 @@
-package AluraProject;
+package AluraProject.Exception;
 
 public class ValorInvalidoException extends RuntimeException {
 

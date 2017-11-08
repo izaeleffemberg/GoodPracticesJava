@@ -1,4 +1,4 @@
-package AluraProject;
+package AluraProject.utils;
 
 public class SistemaDeArquivos {
 
